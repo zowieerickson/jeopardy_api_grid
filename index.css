@@ -1,3 +1,35 @@
-body {
-    background: red;
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 25%); 
+    grid-template-rows: repeat(5, 20%);
+    height: 100vh;
+}
+
+.board * {
+    border: .1em solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.my-category-title {
+    background: lightblue;
+    font-size: 1.4rem;
+    grid-row-start: 1;
+    text-transform: uppercase;
+}
+
+.my-category-clue {
+    font-size: 2rem;
 }
